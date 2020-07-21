@@ -30,7 +30,7 @@ Categories <- read_excel("Dataset.xlsx", sheet = "Test_Categories")
 Jobs <- upload_jobs
 setDT(Jobs)
 #------------------Descriptive Statistic ----------------
-# סטטיסטיקה תיאורית, ערכים חסרים וחריגים
+# Exploring each feature, missing values, integrity issues, distribution
 summary(Jobs)
 str(Jobs)
 set.seed(101) # Set Seed so that same sample can be reproduced in future also
